@@ -4,20 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
 
     <TextView
         android:id="@+id/lb_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Application Name: Student Management System"
-        android:textSize="18sp"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#3F51B5"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/lb_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="App Developer: Nham Lap Hanh"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#3F51B5"
         android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@+id/lb_1" />
     <LinearLayout
@@ -31,14 +39,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="addActivity"
-            android:text="Add New Student" />
+            android:text="Add New Student"
+            android:backgroundTint="#3F51B5"/>
 
         <Button
             android:id="@+id/btn_viewall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="viewActivity"
-            android:text="View All Students" />
+            android:text="View All Students"
+            android:backgroundTint="#3F51B5"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

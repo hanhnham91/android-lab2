@@ -4,21 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddStudentActivity">
+    tools:context=".AddStudentActivity"
+    android:paddingTop="30dp">
 
     <LinearLayout
         android:id="@+id/box_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="30dp">
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/lb_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Student Name:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#3F51B5"
             android:textSize="20sp" />
 
         <EditText
@@ -43,6 +45,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Student Score:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#3F51B5"
             android:textSize="20sp" />
 
         <EditText
@@ -60,6 +64,7 @@
         android:onClick="addNew"
         android:text="ADD"
         android:textSize="20sp"
+        android:backgroundTint="#3F51B5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/box_score" />
