@@ -1,4 +1,4 @@
-package com.example.lab2;
+package com.example.lab2.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 import android.content.Context;
+import com.example.lab2.R;
 
 public class AddStudentActivity extends AppCompatActivity {
 
@@ -24,10 +25,8 @@ public class AddStudentActivity extends AppCompatActivity {
         String studentScore = editTextScore.getText().toString();
 
         Context context = getApplicationContext();
-        CharSequence text = "Student: "+studentName+" is added!";
-        int duration = Toast.LENGTH_LONG;
-        Toast.makeText(context, text, duration).show();
+        Toast.makeText(context, "Student: "+studentName+" is added!", Toast.LENGTH_SHORT).show();
 
-        super.finish();
+        super.finish();// close this activity
     }
 }
