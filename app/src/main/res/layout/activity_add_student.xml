@@ -33,7 +33,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/box_score"
+        android:id="@+id/box_gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,16 +41,118 @@
         app:layout_constraintTop_toBottomOf="@+id/box_name">
 
         <TextView
-            android:id="@+id/lb_score"
+            android:id="@+id/lb_gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Student Score:"
+            android:text="Student Gender:"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="#3F51B5"
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/editTextScore"
+            android:id="@+id/editTextGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/box_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_gender">
+
+        <TextView
+            android:id="@+id/lb_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Email:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#3F51B5"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/box_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_email">
+
+        <TextView
+            android:id="@+id/lb_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Tel:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#3F51B5"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/box_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_tel">
+
+        <TextView
+            android:id="@+id/lb_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student DOB:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#3F51B5"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextDob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/box_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_dob">
+
+        <TextView
+            android:id="@+id/lb_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Final Score:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#3F51B5"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"

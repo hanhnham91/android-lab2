@@ -2,8 +2,6 @@
     <string name="app_name">Student Management System</string>
 
 
-
-
     <!-- Common Action -->
     <string name="common_action_close">Close</string>
     <string name="common_action_save">Save</string>
